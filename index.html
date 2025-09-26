@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RafaelaDev Prompt Engineer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Added Marked.js for Markdown parsing and Highlight.js for syntax highlighting -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css">
+
+    <style>
+      /* For custom scrollbar styling */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #1a202c; /* dark-800 */
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #4a5568; /* dark-600 */
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #718096; /* dark-500 */
+      }
+      /* Custom styles for highlighted code blocks */
+      .prose pre {
+        background-color: #1f2937 !important; /* gray-800 */
+        border: 1px solid #374151; /* gray-700 */
+        border-radius: 0.5rem;
+        padding: 1rem;
+        position: relative;
+        white-space: pre-wrap;   /* Ensures text wraps within the code block */
+        word-break: break-all;   /* Breaks long words that would otherwise overflow */
+      }
+      .prose pre code.hljs {
+          background: transparent;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.1.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.20.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-gray-900">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
