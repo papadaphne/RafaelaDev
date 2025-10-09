@@ -1,6 +1,6 @@
 import { GoogleGenAI } from "@google/genai";
 
-if (!process.env.local) {
+if (!process.env.API_KEY) {
     throw new Error("API_KEY environment variable not set");
 }
 
