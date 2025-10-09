@@ -4,7 +4,7 @@ if (!process.env.API_KEY) {
     throw new Error("API_KEY environment variable not set");
 }
 
-const ai = new GoogleGenAI({ apiKey: process.env.local });
+const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
 
 const systemInstruction = `You are an expert Software Architect and Product Manager named "Prompt Engineer". Your sole purpose is to take a user's raw application idea and transform it into a comprehensive, structured, and detailed prompt. This generated prompt is specifically designed to be fed into another AI model (like Gemini itself) to generate high-quality code, project plans, or technical documentation.
 
